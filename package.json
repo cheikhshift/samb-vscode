@@ -1,0 +1,31 @@
+{
+    "name": "samb",
+    "displayName": "SAMB",
+    "description": "Provide support for building HTTP APIs with SAMB (Server assembly)",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Programming Languages", "Snippets"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "samb",
+            "aliases": ["SAMB", "samb"],
+            "extensions": [".se"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "samb",
+            "scopeName": "source.se",
+            "path": "./syntaxes/samb.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

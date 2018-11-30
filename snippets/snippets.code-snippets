@@ -1,0 +1,42 @@
+{
+  "import": {
+    "prefix": "import",
+    "body": "import $0;",
+    "description": "Import a go package."
+  },
+  "require": {
+    "prefix": "require",
+    "body": "require \"$0\";",
+    "description": "Import a SAMB file."
+  },
+  "global": {
+    "prefix": "global",
+    "body": "global {\n  name $1;\n  type $2;\n  return $3;\n}",
+    "description": "Declare a new global variable."
+  },
+  "provider": {
+    "prefix": "provider",
+    "body": "provider {\n  name $1;\n  type $2;\n  return $3;\n}",
+    "description": "Declare a new provider"
+  },
+  "provide": {
+    "prefix": "provide",
+    "body": "provide $0;",
+    "description": "Use a provider within a request"
+  },
+  "routes": {
+    "prefix": "routes",
+    "body": "routes {\n  $1\n}",
+    "description": "Declare a new route group."
+  },
+  "route": {
+    "prefix": "route",
+    "body": "route {\n  method $1;\n  path $2;\n  handler $3;\n}",
+    "description": "Declare a new HTTP route"
+  },
+  "go": {
+    "prefix": "go",
+    "body": "go {\n  do $1;\n  # do ;\n}",
+    "description": "Declare a a custom Go code block"
+  }
+}
