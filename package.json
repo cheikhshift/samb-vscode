@@ -2,7 +2,13 @@
     "name": "samb",
     "displayName": "SAMB",
     "description": "Provide support for building HTTP APIs with SAMB (Server assembly)",
-    "version": "0.0.1",
+    "version": "0.0.2",
+    "publisher" : "GopherSauce",
+    "icon": "icon.jpg",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cheikhshift/samb-vscode"
+    },
     "engines": {
         "vscode": "^1.29.0"
     },
